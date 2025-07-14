@@ -24,12 +24,15 @@ const App = () => {
 
   return (
     <>
-      <main>
-        <h1>FlashCards</h1>
+      <main className ="flex flex-col items-center justify-center w-full h-screen bg-gray-300">
+        <h1 className="text-3xl mb-5">FlashCards</h1>
         <Flashcard card={flashcards[index]}/>
 
-        <Button onClick={nextCard} label="Next" />
-        <Button onClick={prevCard} label="Previous" />
+        <div className="w-1/2 flex flex-row justify-between gap-2 mt-5">
+          <Button onClick={prevCard} icon="bi-arrow-left" />
+          <Button onClick={nextCard} icon="bi-arrow-right" />
+        </div>
+        
       </main>
     </>
   )
