@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.flashcard-container {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  perspective: 1000px;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
 export const flashcards = [
     {
         front: `What's the key difference between a stack a queue?`,
-        back: `A stack is LIFO (Last In, First Out), while a queue is FIFO <i>(First In, First Out)</i>.`
+        back: `A stack is LIFO (Last In, First Out), while a queue is FIFO (First In, First Out).`
     },
      {
         front: `What is the time complexity of binary search?`,
