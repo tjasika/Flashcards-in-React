@@ -29,7 +29,7 @@ const App = () => {
   return (
     <>
       <main className ="flex flex-col items-center justify-center w-full h-screen bg-gray-300">
-        <h1 className="text-3xl mb-5">FlashCards</h1>
+        <h1 className="text-3xl mb-5 text-gray-900 font-bold">FlashCards</h1>
         <Flashcard card={flashcards[index]} isFlipped={isFlipped} onFlip={() => setFlipped(!isFlipped)}/>
 
         <div className="w-1/2 flex flex-row justify-between gap-2 mt-5">
