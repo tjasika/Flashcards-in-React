@@ -1,11 +1,10 @@
 import { useState } from "react";
 
-export const Flashcard = ({card}) => {
-    const[isFlipped, setFlipped] = useState(false);
+export const Flashcard = ({card, isFlipped, onFlip}) => {
 
     return (
-        <div className="flashcard-container" onClick={() => {setFlipped(!isFlipped)}}>
-            <div className={`flashcard-inner ${isFlipped ? 'flipped' : ''}`}>
+        <div className="flashcard-container" onClick={onFlip} >
+            <div className={`flashcard-inner ${isFlipped ? 'flipped' : ''}`}>                
                 <div className="flashcard-front">
                     <p>{card.front}</p>
                 </div>
